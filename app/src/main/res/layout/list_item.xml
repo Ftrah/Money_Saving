@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/item_list"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bg_color_list"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#cef0e4"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_trending_up_24"
+            app:tint="#ff866b" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+            <TextView
+                android:id="@+id/view_judul"
+                android:layout_width="wrap_content"
+                android:text="Makan Siang"
+                android:textFontWeight="800"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/view_total"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:text="Rp. 200.000 ,-"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/view_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:text="Tanggal : 2002-12-02"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

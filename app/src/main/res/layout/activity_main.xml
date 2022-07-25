@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#ff866b"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/total_view"
+                android:layout_width="match_parent"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textFontWeight="800"
+                android:gravity="center"
+                android:text="Rp. 200.000 ,-"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_item_main"
+            android:paddingVertical="20dp"
+            android:layout_marginTop="150dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#ff866b"
+            android:src="@drawable/ic_baseline_request_quote_24"
+            android:tint="#fff" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="20dp"
+            android:backgroundTint="#ff866b"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="#fff" />
+    </FrameLayout>
+
+</LinearLayout>
